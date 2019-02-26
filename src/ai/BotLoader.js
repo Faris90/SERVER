@@ -7,7 +7,7 @@ function BotLoader(gameServer,botAmount) {
 	this.gameServer = gameServer;
 	
 	// Names
-	this.randomNames = ["Bacteria","Spore","Satanist","Earth","Nazi","Moon","Poland","sanik","ayy lmao","Reddit","CIA","wojak","doge","sir","facepunch","8","Russia","Circle","Blob","4chan","Mars","Ogar","NASA","Helper","Parasite","Square","Round","Bug","Splitting","Ice"];
+	this.randomNames = []
 	this.nameIndex = 0;
 	
 	for (var i = 0; i < botAmount; i++) {
@@ -34,7 +34,7 @@ BotLoader.prototype.getName = function() {
 		name = this.randomNames[index];
 		this.randomNames.splice(index,1);
 	} else {
-		name = "bot" + ++this.nameIndex;
+		name = "Minion" + ++this.nameIndex;
 	}
 	
 	return name;
